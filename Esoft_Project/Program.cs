@@ -9,7 +9,7 @@ namespace Esoft_Project
     static class Program
     {
         // создание статистического экземпляра класса модели ADD.EDM
-        public static TutorialEntities1 wtfDb = new TutorialEntities1();
+        public static TutorialEntities3 wtfDb = new TutorialEntities3();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>

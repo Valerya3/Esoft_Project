@@ -217,9 +217,9 @@
             this.labelCoordinate_latitude.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.labelCoordinate_latitude.Location = new System.Drawing.Point(581, 9);
             this.labelCoordinate_latitude.Name = "labelCoordinate_latitude";
-            this.labelCoordinate_latitude.Size = new System.Drawing.Size(69, 19);
+            this.labelCoordinate_latitude.Size = new System.Drawing.Size(68, 19);
             this.labelCoordinate_latitude.TabIndex = 14;
-            this.labelCoordinate_latitude.Text = "Ширина";
+            this.labelCoordinate_latitude.Text = "Широта";
             // 
             // labelCoordinate_longitude
             // 
@@ -300,10 +300,11 @@
             this.columnHeader6,
             this.columnHeader7,
             this.columnHeader8});
+            this.listViewRealEstateSet_Apartment.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewRealEstateSet_Apartment.FullRowSelect = true;
             this.listViewRealEstateSet_Apartment.GridLines = true;
             this.listViewRealEstateSet_Apartment.HideSelection = false;
-            this.listViewRealEstateSet_Apartment.Location = new System.Drawing.Point(34, 202);
+            this.listViewRealEstateSet_Apartment.Location = new System.Drawing.Point(35, 203);
             this.listViewRealEstateSet_Apartment.MultiSelect = false;
             this.listViewRealEstateSet_Apartment.Name = "listViewRealEstateSet_Apartment";
             this.listViewRealEstateSet_Apartment.Size = new System.Drawing.Size(681, 166);
@@ -362,10 +363,11 @@
             this.columnHeader12,
             this.columnHeader13,
             this.columnHeader14});
+            this.listViewRealEstateSet_Land.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewRealEstateSet_Land.FullRowSelect = true;
             this.listViewRealEstateSet_Land.GridLines = true;
             this.listViewRealEstateSet_Land.HideSelection = false;
-            this.listViewRealEstateSet_Land.Location = new System.Drawing.Point(34, 200);
+            this.listViewRealEstateSet_Land.Location = new System.Drawing.Point(34, 203);
             this.listViewRealEstateSet_Land.MultiSelect = false;
             this.listViewRealEstateSet_Land.Name = "listViewRealEstateSet_Land";
             this.listViewRealEstateSet_Land.Size = new System.Drawing.Size(681, 168);
@@ -420,7 +422,7 @@
             this.listViewRealEstateSet_House.FullRowSelect = true;
             this.listViewRealEstateSet_House.GridLines = true;
             this.listViewRealEstateSet_House.HideSelection = false;
-            this.listViewRealEstateSet_House.Location = new System.Drawing.Point(34, 200);
+            this.listViewRealEstateSet_House.Location = new System.Drawing.Point(34, 203);
             this.listViewRealEstateSet_House.MultiSelect = false;
             this.listViewRealEstateSet_House.Name = "listViewRealEstateSet_House";
             this.listViewRealEstateSet_House.Size = new System.Drawing.Size(681, 168);

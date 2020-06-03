@@ -4,10 +4,17 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="cb168d058211451ab2f349efba8ed2fa" Name="Diagram1">
-        <EntityTypeShape EntityType="TutorialModel.ClientsSet" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="TutorialModel.RealEstateSet" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="TutorialModel.RieltorSet" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="206d5fe7b37e47ec9be024253bd0f15e" Name="Diagram1">
+        <EntityTypeShape EntityType="TutorialModel.ClientsSet" Width="1.5" PointX="3.5" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TutorialModel.DemandSet" Width="1.5" PointX="0.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TutorialModel.RealEstateSet" Width="1.5" PointX="6.125" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TutorialModel.RieltorSet" Width="1.5" PointX="3.625" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TutorialModel.SupplySet" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="TutorialModel.FK_DemandSet_ClientsSet" ManuallyRouted="false" />
+        <AssociationConnector Association="TutorialModel.FK_SupplySet_ClientSet" ManuallyRouted="false" />
+        <AssociationConnector Association="TutorialModel.FK_DemandSet_RieltorSet" ManuallyRouted="false" />
+        <AssociationConnector Association="TutorialModel.FK_SupplySet_RealEstateSet" ManuallyRouted="false" />
+        <AssociationConnector Association="TutorialModel.FK_SupplySet_RieltorSet" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

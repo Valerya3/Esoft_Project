@@ -665,7 +665,7 @@
             this.Controls.Add(this.listViewApartament);
             this.Name = "FormDemand";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Потребности";
+            this.Text = "FormDemand";
             this.Load += new System.EventHandler(this.FormDemand_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

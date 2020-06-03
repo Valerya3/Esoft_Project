@@ -18,7 +18,7 @@ namespace Esoft_Project
             ShowRieltor();
             ShowClients();
             ShowRealEstate();
-            ShowSlupplySet();
+            ShowSupplySet();
         }
 
         void ShowRieltor()
@@ -67,11 +67,11 @@ namespace Esoft_Project
                 supply.Prise = Convert.ToInt64(textBoxPrice.Text);
                 Program.wtfDb.SupplySet.Add(supply);
                 Program.wtfDb.SaveChanges();
-                ShowSlupplySet();
+                ShowSupplySet();
             }
             else MessageBox.Show("Данные не выбраны", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-        void ShowSlupplySet()
+        void ShowSupplySet()
         {
             listViewSupplySet.Items.Clear();
             foreach (SupplySet supply in Program.wtfDb.SupplySet)
@@ -104,7 +104,7 @@ namespace Esoft_Project
                 supply.Prise = Convert.ToInt64(textBoxPrice.Text);
                 Program.wtfDb.SupplySet.Add(supply);
                 Program.wtfDb.SaveChanges();
-                ShowSlupplySet();
+                ShowSupplySet();
 
             }
         }
@@ -138,7 +138,7 @@ namespace Esoft_Project
                     SupplySet supply = listViewSupplySet.SelectedItems[0].Tag as SupplySet;
                     Program.wtfDb.SupplySet.Remove(supply);
                     Program.wtfDb.SaveChanges();
-                    ShowSlupplySet();
+                    ShowSupplySet();
                 }
                 comboBoxRieltor.SelectedItem = null;
                 comboBoxClients.SelectedItem = null;
@@ -152,6 +152,11 @@ namespace Esoft_Project
         }
 
         private void comboBoxRieltor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormSupply_Load(object sender, EventArgs e)
         {
 
         }

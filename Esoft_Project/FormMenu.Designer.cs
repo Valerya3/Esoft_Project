@@ -35,13 +35,14 @@
             this.buttonOpenDemands = new System.Windows.Forms.Button();
             this.buttonOpenSupplies = new System.Windows.Forms.Button();
             this.buttonOpenDeals = new System.Windows.Forms.Button();
+            this.labelHello = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // Logo
             // 
             this.Logo.Image = global::Esoft_Project.Properties.Resources.logo;
-            this.Logo.Location = new System.Drawing.Point(6, 12);
+            this.Logo.Location = new System.Drawing.Point(6, 3);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(265, 99);
             this.Logo.TabIndex = 0;
@@ -71,7 +72,7 @@
             this.buttonOpenAgents.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonOpenAgents.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonOpenAgents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.buttonOpenAgents.Location = new System.Drawing.Point(6, 213);
+            this.buttonOpenAgents.Location = new System.Drawing.Point(6, 489);
             this.buttonOpenAgents.Margin = new System.Windows.Forms.Padding(15);
             this.buttonOpenAgents.Name = "buttonOpenAgents";
             this.buttonOpenAgents.Padding = new System.Windows.Forms.Padding(10);
@@ -88,7 +89,7 @@
             this.buttonOpenRealEstates.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonOpenRealEstates.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonOpenRealEstates.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.buttonOpenRealEstates.Location = new System.Drawing.Point(6, 282);
+            this.buttonOpenRealEstates.Location = new System.Drawing.Point(6, 215);
             this.buttonOpenRealEstates.Margin = new System.Windows.Forms.Padding(15);
             this.buttonOpenRealEstates.Name = "buttonOpenRealEstates";
             this.buttonOpenRealEstates.Padding = new System.Windows.Forms.Padding(10);
@@ -105,7 +106,7 @@
             this.buttonOpenDemands.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonOpenDemands.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonOpenDemands.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.buttonOpenDemands.Location = new System.Drawing.Point(6, 351);
+            this.buttonOpenDemands.Location = new System.Drawing.Point(6, 282);
             this.buttonOpenDemands.Margin = new System.Windows.Forms.Padding(15);
             this.buttonOpenDemands.Name = "buttonOpenDemands";
             this.buttonOpenDemands.Padding = new System.Windows.Forms.Padding(10);
@@ -122,7 +123,7 @@
             this.buttonOpenSupplies.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonOpenSupplies.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonOpenSupplies.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.buttonOpenSupplies.Location = new System.Drawing.Point(6, 419);
+            this.buttonOpenSupplies.Location = new System.Drawing.Point(6, 350);
             this.buttonOpenSupplies.Margin = new System.Windows.Forms.Padding(15);
             this.buttonOpenSupplies.Name = "buttonOpenSupplies";
             this.buttonOpenSupplies.Padding = new System.Windows.Forms.Padding(10);
@@ -139,7 +140,7 @@
             this.buttonOpenDeals.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonOpenDeals.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonOpenDeals.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.buttonOpenDeals.Location = new System.Drawing.Point(6, 487);
+            this.buttonOpenDeals.Location = new System.Drawing.Point(6, 417);
             this.buttonOpenDeals.Margin = new System.Windows.Forms.Padding(15);
             this.buttonOpenDeals.Name = "buttonOpenDeals";
             this.buttonOpenDeals.Padding = new System.Windows.Forms.Padding(10);
@@ -147,6 +148,17 @@
             this.buttonOpenDeals.TabIndex = 6;
             this.buttonOpenDeals.Text = "Сделки";
             this.buttonOpenDeals.UseVisualStyleBackColor = false;
+            this.buttonOpenDeals.Click += new System.EventHandler(this.buttonOpenDeals_Click);
+            // 
+            // labelHello
+            // 
+            this.labelHello.AutoSize = true;
+            this.labelHello.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelHello.Location = new System.Drawing.Point(32, 113);
+            this.labelHello.Name = "labelHello";
+            this.labelHello.Size = new System.Drawing.Size(63, 19);
+            this.labelHello.TabIndex = 7;
+            this.labelHello.Text = "Привет";
             // 
             // Menu
             // 
@@ -154,6 +166,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(279, 561);
+            this.Controls.Add(this.labelHello);
             this.Controls.Add(this.buttonOpenDeals);
             this.Controls.Add(this.buttonOpenSupplies);
             this.Controls.Add(this.buttonOpenDemands);
@@ -166,6 +179,7 @@
             this.Text = "Esoft";
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -178,6 +192,7 @@
         private System.Windows.Forms.Button buttonOpenDemands;
         private System.Windows.Forms.Button buttonOpenSupplies;
         private System.Windows.Forms.Button buttonOpenDeals;
+        private System.Windows.Forms.Label labelHello;
     }
 }
 

@@ -265,6 +265,7 @@
             this.Name = "FormSupply";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Предложения";
+            this.Load += new System.EventHandler(this.FormSupply_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

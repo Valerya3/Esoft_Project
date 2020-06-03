@@ -14,6 +14,12 @@ namespace Esoft_Project
     
     public partial class DemandSet
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public DemandSet()
+        {
+            this.DealSet = new HashSet<DealSet>();
+        }
+    
         public int ID { get; set; }
         public int IDRieltor { get; set; }
         public int IDClient { get; set; }
@@ -30,6 +36,8 @@ namespace Esoft_Project
         public Nullable<int> MaxFloors { get; set; }
     
         public virtual ClientsSet ClientsSet { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DealSet> DealSet { get; set; }
         public virtual RieltorSet RieltorSet { get; set; }
     }
 }
